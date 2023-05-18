@@ -1,0 +1,26 @@
+//q1. Write a java application to determine the length of the string str = "Hello World".
+public class StringLength {
+    public static void main(String[] args) {
+        String str = "Hello World";
+        int length = str.length();
+
+        System.out.println("Length of the string: " + length);
+    }
+}
+
+// q2 on string buffer class Write an java application to append the following strings "String Buffer", "is a peer class of String","that provides much of","the functionality of strings" using a stringBuffer
+public class StringBufferAppend {
+    public static void main(String[] args) {
+        StringBuffer stringBuffer = new StringBuffer();
+
+        // Append the strings
+        stringBuffer.append("String Buffer");
+        stringBuffer.append(" is a peer class of String");
+        stringBuffer.append(" that provides much of");
+        stringBuffer.append(" the functionality of strings");
+
+        // Convert StringBuffer to String and print
+        String result = stringBuffer.toString();
+        System.out.println(result);
+    }
+}
